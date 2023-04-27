@@ -34,17 +34,8 @@ export default function Scene() {
         width < 9 ? width * .5 : 4.5
     ]
 
-    const planeRef = useRef(null)
-    useFrame(({ camera }) => {
-        if (planeRef.current) {
-          planeRef.current.lookAt(camera.position)
-        }
-      })
 
     const texture = useTexture('./images/galaxy-generator.png')
-    const picWidth = texture.image.width / 1000
-    const picHeight = texture.image.height / 1000
-    console.log(picHeight, picWidth)
 
     return (
         <>
@@ -55,10 +46,10 @@ export default function Scene() {
             <SiteTitle text='0xJosiah' navTo='/' position={siteTitlePos} rotation={[ 0, 1, 0.09 ]} />
             {/* <Sign text='CONTACT' navTo='/contact' /> */}
 
-            <ScrollControls pages={4} infinite horizontal>
+            <ScrollControls pages={6} infinite horizontal>
                 <Scroll>
 
-                    <SectionTitle text='ABOUT' navTo='/about' position={[ conditionalWidth, 2, 2 ]}>
+                    <SectionTitle text='BEGINNINGS' navTo='/about' position={[ conditionalWidth, 2, 2 ]}>
                         {/* <Plane args={[picWidth, picHeight]} position={[ -1, -1, 1 ]} ref={planeRef}>
                             <meshBasicMaterial map={texture} />
                         </Plane> */}
@@ -66,8 +57,8 @@ export default function Scene() {
                     </SectionTitle>
                     
 
-                    <SectionTitle text='EXPERIENCE' navTo='/experience' position={[ width, 2, -4 ]} />
-                    <SectionTitle text='PROJECTS' navTo='/projects' position={[ width * 1.7, 2, 1 ]} />
+                    <SectionTitle text='COLLEGE' navTo='/experience' position={[ width * 2, 2, 2 ]} />
+                    <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]} />
 
                 </Scroll>
             </ScrollControls>
