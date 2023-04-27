@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import AnimatedRoutes from './components/AnimatedRoutes'
 import Scene from './Scene'
+import useFullScreen from './hooks/useFullScreen'
 
 const camConfig = {
     fov: 45,
@@ -11,6 +12,7 @@ const camConfig = {
 
 
 export default function App() {
+    useFullScreen()
 
     return (
         <>
