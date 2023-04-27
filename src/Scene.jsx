@@ -1,11 +1,10 @@
-import { Html, Plane, Scroll, ScrollControls, useTexture } from '@react-three/drei'
-import { useFrame, useThree } from '@react-three/fiber'
+import { Scroll, ScrollControls, useTexture } from '@react-three/drei'
+import { useThree } from '@react-three/fiber'
 import { useControls } from 'leva'
 import { Perf } from 'r3f-perf'
 import Ocean from './components/Ocean'
 import SectionTitle from './components/SectionTitle'
 import SiteTitle from './components/SiteTitle'
-import Sign from './components/Sign'
 import { useRef } from 'react'
 import Pic from './components/Pic'
 
@@ -64,7 +63,7 @@ export default function Scene() {
                         <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
                         <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
-                    
+
                     <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]}>
                         <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
                         <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
