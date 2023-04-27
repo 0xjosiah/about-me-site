@@ -53,12 +53,23 @@ export default function Scene() {
                         {/* <Plane args={[picWidth, picHeight]} position={[ -1, -1, 1 ]} ref={planeRef}>
                             <meshBasicMaterial map={texture} />
                         </Plane> */}
-                        <Pic image={texture} position={[ -1, 1, 0 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
                     
 
-                    <SectionTitle text='COLLEGE' navTo='/experience' position={[ width * 2, 2, 2 ]} />
-                    <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]} />
+                    <SectionTitle text='COLLEGE' navTo='/experience' position={[ width * 2, 2, 2 ]}>
+                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                    </SectionTitle>
+                    
+                    <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]}>
+                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                    </SectionTitle>
 
                 </Scroll>
             </ScrollControls>
