@@ -34,7 +34,19 @@ export default function Scene() {
     ]
 
 
-    const texture = useTexture('./images/galaxy-generator.png')
+    const [
+        galaxyGenerator,
+        baseballTeam,
+        basketball,
+        hsGrad,
+        track
+    ] = useTexture([
+        './images/galaxy-generator.png',
+        './images/baseball-team.jpeg',
+        './images/basketball.jpeg',
+        './images/hsGrad.jpeg',
+        './images/track.jpeg',
+    ])
 
     return (
         <>
@@ -52,34 +64,35 @@ export default function Scene() {
                         {/* <Plane args={[picWidth, picHeight]} position={[ -1, -1, 1 ]} ref={planeRef}>
                             <meshBasicMaterial map={texture} />
                         </Plane> */}
-                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={baseballTeam} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={basketball} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={track} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={hsGrad} position={[ 6, -0.5, 0 ]} size={1.2}/>
                     </SectionTitle>
                     
 
                     <SectionTitle text='COLLEGE' navTo='/experience' position={[ width * 2, 2, 2 ]}>
-                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]}>
-                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='2020' navTo='/projects' position={[ width * 4, 2, 2 ]}>
-                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='RETIREMENT' navTo='/projects' position={[ width * 5, 2, 2 ]}>
-                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='NEXT...' navTo='/projects' position={[ width * 6, 2, 2 ]}>
