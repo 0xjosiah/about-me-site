@@ -43,10 +43,25 @@ export default function Scene() {
         fireTube,
         paintProj,
         stadiumShot,
-        buffsBball,,
+        buffsBball,
         skiCirc,
         skiAction,
         collegeGrad,
+        denverSign,
+        headShot,
+        stonks,
+        notStonks,
+        skiGroup,
+        celticsGame,
+        bikeAspens,
+        bikeFourteener,
+        bikeDurango,
+        muddyFace,
+        bikeSubie,
+        bikeGroupRet,
+        miners,
+        lounge,
+        marbleCombine
     ] = useTexture([
         './images/galaxy-generator.png',
         './images/baseball-team.jpeg',
@@ -60,6 +75,21 @@ export default function Scene() {
         './images/skiCirc.jpeg',
         './images/skiAction.jpeg',
         './images/collegeGrad.jpeg',
+        './images/denverSign.jpeg',
+        './images/headShot.jpeg',
+        './images/stonks.webp',
+        './images/notStonks.jpeg',
+        './images/skiGroup.jpeg',
+        './images/celticsGame.jpeg',
+        './images/bikeAspens.jpeg',
+        './images/bikeFourteener.jpeg',
+        './images/bikeDurango.jpeg',
+        './images/muddyFace.jpeg',
+        './images/bikeSubie.jpeg',
+        './images/bikeGroupRet.jpeg',
+        './images/miners.jpeg',
+        './images/lounge.jpeg',
+        './images/marble-combine.png',
     ])
 
     return (
@@ -90,34 +120,37 @@ export default function Scene() {
                         <Pic image={buffsBball} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
                         <Pic image={stadiumShot} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
                         <Pic image={paintProj} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
-                        <Pic image={skiAction} position={[ 5.5, -0.17, 0 ]} size={1.2}/>
-                        <Pic image={skiCirc} position={[ 5.5, -0.17, 0 ]} size={1.2}/>
-                        {/* <Pic image={collegeGrad} position={[ 7, -0.75, 0.4 ]} size={1.2}/> */}
+                        <Pic image={skiAction} position={[ 5.75, -1.07, -0.95 ]} size={1.2}/>
+                        <Pic image={skiCirc} position={[ 5.5, -0.17, 0.5 ]} size={1.2}/>
+                        <Pic image={collegeGrad} position={[ 7.97, -0.75, 0.4 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]}>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={denverSign} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={headShot} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={stonks} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={celticsGame} position={[ 5.75, -1.07, -0.95 ]} size={1.2}/>
+                        <Pic image={skiGroup} position={[ 5.5, -0.17, 0.5 ]} size={1.2}/>
+                        {/* <Pic image={notStonks} position={[ 7.97, -0.75, 0.4 ]} size={1.2}/> */}
                     </SectionTitle>
 
                     <SectionTitle text='2020' navTo='/projects' position={[ width * 4, 2, 2 ]}>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={notStonks} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={bikeAspens} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={bikeFourteener} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={bikeDurango} position={[ 5.75, -1.07, -0.95 ]} size={1.2}/>
+                        <Pic image={muddyFace} position={[ 5.5, -0.17, 0.5 ]} size={1.2}/>
                     </SectionTitle>
 
                     <SectionTitle text='RETIREMENT' navTo='/projects' position={[ width * 5, 2, 2 ]}>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={bikeSubie} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={lounge} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={miners} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={marbleCombine} position={[ 7.75, -1.07, -0.95 ]} size={1.2}/>
+                        <Pic image={galaxyGenerator} position={[ 5.5, -0.17, 0.5 ]} size={1.2}/>
                     </SectionTitle>
 
-                    <SectionTitle text='NEXT...' navTo='/projects' position={[ width * 6, 2, 2 ]}>
-                        {/* <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/> */}
-                    </SectionTitle>
+                    <SectionTitle text='NEXT...' navTo='/projects' position={[ width * 6, 2, 2 ]}></SectionTitle>
 
                 </Scroll>
             </ScrollControls>
