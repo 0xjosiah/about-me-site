@@ -39,13 +39,15 @@ export default function Scene() {
         baseballTeam,
         basketball,
         hsGrad,
-        track
+        track,
+        fireTube
     ] = useTexture([
         './images/galaxy-generator.png',
         './images/baseball-team.jpeg',
         './images/basketball.jpeg',
         './images/hsGrad.jpeg',
         './images/track.jpeg',
+        './images/fireTube.jpeg'
     ])
 
     return (
@@ -67,7 +69,8 @@ export default function Scene() {
                         <Pic image={baseballTeam} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
                         <Pic image={basketball} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
                         <Pic image={track} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
-                        <Pic image={hsGrad} position={[ 6, -0.5, 0 ]} size={1.2}/>
+                        <Pic image={fireTube} position={position} size={1.2}/>
+                        <Pic image={hsGrad} position={[ 7, -0.75, 0.4 ]} size={1.2}/>
                     </SectionTitle>
                     
 
