@@ -40,14 +40,26 @@ export default function Scene() {
         basketball,
         hsGrad,
         track,
-        fireTube
+        fireTube,
+        paintProj,
+        stadiumShot,
+        buffsBball,,
+        skiCirc,
+        skiAction,
+        collegeGrad,
     ] = useTexture([
         './images/galaxy-generator.png',
         './images/baseball-team.jpeg',
         './images/basketball.jpeg',
         './images/hsGrad.jpeg',
         './images/track.jpeg',
-        './images/fireTube.jpeg'
+        './images/fireTube.jpeg',
+        './images/paintProj.jpeg',
+        './images/stadiumShot.jpeg',
+        './images/buffsBball.jpeg',
+        './images/skiCirc.jpeg',
+        './images/skiAction.jpeg',
+        './images/collegeGrad.jpeg',
     ])
 
     return (
@@ -75,9 +87,12 @@ export default function Scene() {
                     
 
                     <SectionTitle text='COLLEGE' navTo='/experience' position={[ width * 2, 2, 2 ]}>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
-                        <Pic image={galaxyGenerator} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={buffsBball} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={stadiumShot} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={paintProj} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                        <Pic image={skiAction} position={[ 5.5, -0.17, 0 ]} size={1.2}/>
+                        <Pic image={skiCirc} position={[ 5.5, -0.17, 0 ]} size={1.2}/>
+                        {/* <Pic image={collegeGrad} position={[ 7, -0.75, 0.4 ]} size={1.2}/> */}
                     </SectionTitle>
 
                     <SectionTitle text='POST GRAD' navTo='/projects' position={[ width * 3, 2, 2 ]}>
