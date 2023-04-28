@@ -45,7 +45,7 @@ export default function Scene() {
             <SiteTitle text='0xJosiah' navTo='/' position={siteTitlePos} rotation={[ 0, 1, 0.09 ]} />
             {/* <Sign text='CONTACT' navTo='/contact' /> */}
 
-            <ScrollControls pages={6} infinite horizontal>
+            <ScrollControls pages={8} infinite horizontal>
                 <Scroll>
 
                     <SectionTitle text='BEGINNINGS' navTo='/about' position={[ conditionalWidth, 2, 2 ]}>
@@ -68,6 +68,24 @@ export default function Scene() {
                         <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
                         <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
                         <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                    </SectionTitle>
+
+                    <SectionTitle text='2020' navTo='/projects' position={[ width * 4, 2, 2 ]}>
+                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                    </SectionTitle>
+
+                    <SectionTitle text='RETIREMENT' navTo='/projects' position={[ width * 5, 2, 2 ]}>
+                        <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/>
+                    </SectionTitle>
+
+                    <SectionTitle text='NEXT...' navTo='/projects' position={[ width * 6, 2, 2 ]}>
+                        {/* <Pic image={texture} position={[ -0.04, -0.92, 0.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ -0.04, -.2, -1.86 ]} size={1.2}/>
+                        <Pic image={texture} position={[ 4, -1.2, -0.045 ]} size={1.2}/> */}
                     </SectionTitle>
 
                 </Scroll>
